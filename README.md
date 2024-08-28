@@ -18,7 +18,7 @@ An Employee Management System React application that allows users to display, so
 - **JavaScript (ES6+)** - Programming language used for logic and interactions.
 - **HTML** - Markup language for structuring the content.
 - **CSS** - Styling the user interface.
-- **Node.js** - For managing dependencies and running the development server.
+<!-- - **Node.js** - For managing dependencies and running the development server. -->
 - **Netlify** - Platform for deploying the application.
 - **Git** - Version control for tracking changes and collaboration.
 
