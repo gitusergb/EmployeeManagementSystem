@@ -23,6 +23,8 @@ function EmployeeTable({employees, onDelete, onEdit }) {
             <td>{emp.email}</td>
             <td>{emp.gender}</td>
             <td>
+          <span>₹</span>
+          &nbsp;&nbsp;
               <input 
                 type="number" 
                 value={emp.salary} 
