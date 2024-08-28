@@ -61,7 +61,7 @@ The application is deployed on Netlify and can be accessed at:
 
 ### Employee Table View
 
-![Employee Table](./screenshots/employee-table.png)
+![Employee](./screenshots/first%20look.png)
 
 ### Edit Employee
 
