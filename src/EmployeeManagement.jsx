@@ -6,7 +6,9 @@ import employeeData from './data/Employees.json'; // JSON data
 
 const EmployeeManagement=()=> {
     const [employees, setEmployees] = useState(employeeData);
-    const { searchInput, setSearchInput, handleSearch, filteredEmployees } = useSearch(employees);
+    const [searchInput, setSearchInput] = useState('');
+
+    const filteredEmployees = useSearch(employees, searchInput);
 
   const handleDelete = (id) => {
     const updatedEmployees = employees.filter(emp => emp.id !== id);
@@ -18,6 +20,9 @@ const EmployeeManagement=()=> {
       emp.id === id ? { ...emp, [field]: value } : emp
     );
     setEmployees(updatedEmployees);
+  };
+  const handleSearchClick = () => {
+    setSearchInput(searchInput);
   };
 
   return (
@@ -34,14 +39,14 @@ const EmployeeManagement=()=> {
                 placeholder="Search by name..."
                 style={{ padding: "10px" }}
             />
-            <button onClick={ useSearch(searchInput) }>
+            <button onClick={ handleSearchClick }>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8E8u159Rz_UmyI-eriCfXhdSD3pl48Y4cUg&s" alt="search" border="0" width="30px"  />
       
             </button>
             </div>
       
       <EmployeeTable 
-        employees={employees} 
+        employees={filteredEmployees} 
         onDelete={handleDelete} 
         onEdit={handleEdit} 
       />

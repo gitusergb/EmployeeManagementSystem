@@ -1,20 +1,13 @@
-import { useState, useEffect } from 'react';
+import {useMemo } from 'react';
 
-const useSearch = (employees) => {
-    const [searchInput, setSearchInput] = useState('');
-    const [filteredEmployees, setFilteredEmployees] = useState(employees);
-
-    const handleSearch = () => {
-        setFilteredEmployees(
-            employees.filter((employee) =>
-                employee.name 
-                    ? employee.name.toLowerCase().includes(searchInput.toLowerCase()) 
-                    : false
-            )
+const useSearch = (employees,searchInput) => {
+    return useMemo(() => {
+        return employees.filter(
+          item =>
+            item.first_name.toLowerCase().includes(searchInput.toLowerCase()) ||
+            item.last_name.toLowerCase().includes(searchInput.toLowerCase())
         );
+      }, [employees, searchInput]);
     };
-
-    return { filteredEmployees, searchInput, setSearchInput, handleSearch };
-};
 
 export default useSearch;
