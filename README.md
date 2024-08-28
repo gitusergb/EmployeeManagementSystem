@@ -1,4 +1,78 @@
 
+# Employee Management System
+
+An Employee Management System React application that allows users to display, sort, filter, search, edit, and delete employee data efficiently.
+
+## Features
+
+- Display employee data in a table format.
+- Sort employees by salary (ascending/descending).
+- Filter employees by gender.
+- Search employees by name using a custom hook (`useSearch`).
+- Edit employee details (except ID) directly in the table.
+- Delete employees, removing them from the data.
+
+## Tech Stack
+
+- **React.js** - Frontend library for building user interfaces.
+- **JavaScript (ES6+)** - Programming language used for logic and interactions.
+- **HTML** - Markup language for structuring the content.
+- **CSS** - Styling the user interface.
+- **Node.js** - For managing dependencies and running the development server.
+- **Netlify** - Platform for deploying the application.
+- **Git** - Version control for tracking changes and collaboration.
+
+<!-- https://i.ibb.co/WWw3bTH/chart.jpg
+https://i.ibb.co/qCsqXSN/elogo.jpg -->
+## Project Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/gitusergb/employee-management-system.git
+   cd employee-management-system
+   ```
+
+2. **Install dependencies:**
+
+   ```
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```
+   npm start
+   ```
+
+   The application will open in your default browser at `http://localhost:3000/`.
+
+## Deployment
+
+The application is deployed on Netlify and can be accessed at:
+
+**[Employee Management System - Live Demo](https://your-netlify-link.netlify.app/)**
+
+## Screenshots
+
+### Logo
+![logo](https://i.ibb.co/qCsqXSN/elogo.jpg)
+
+### Employee Table View
+
+![Employee Table](./screenshots/employee-table.png)
+
+### Edit Employee
+
+![Edit Employee](./screenshots/edit-employee.png)
+
+### Search and Filter
+
+![Search and Filter](./screenshots/search-filter.png)
+
+## Contributor
+
+- **Gauri Bidwai** - [GitHub](https://github.com/gitusergb)
 
 
 
