@@ -22,6 +22,10 @@ const EmployeeManagement=()=> {
 
   return (
     <div className="employee-management">
+      <div style={{display:'flex' ,flexDirection:'row',justifyContent:'center', alignItems:'center',color:'#184fa3'}}>
+        <img src="https://i.ibb.co/qCsqXSN/elogo.jpg" alt="logo" style={{ height: "70px" }}/>
+        <h1>Employee Management System</h1>
+      </div>
         <div className='searchdiv'>
                 <input 
                 type="text" 

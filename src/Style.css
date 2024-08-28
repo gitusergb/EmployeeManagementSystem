@@ -1,0 +1,151 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Employee Management Container */
+.employee-management {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Search Section */
+.searchdiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.searchdiv input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.searchdiv input[type="text"]:focus {
+    border-color: #49ae90;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.searchdiv button {
+    background-color: #49ae90;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchdiv button img {
+    width: 20px;
+}
+
+.searchdiv button:hover {
+    background-color: #49ae90
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #49ae90;
+    color: #90fb3a;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    transition: background-color 0.3s ease;
+}
+
+/* Buttons inside table */
+button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #02336f;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .employee-management {
+        padding: 15px;
+    }
+
+    .searchdiv input[type="text"] {
+        width: 70%;
+        padding: 8px;
+    }
+
+    .searchdiv button {
+        padding: 8px 12px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .employee-management {
+        padding: 10px;
+    }
+
+    .searchdiv {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .searchdiv input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .searchdiv button {
+        width: 100%;
+    }
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css';
+import './Style.css';
+
 import EmployeeManagement from './EmployeeManagement';
 
 

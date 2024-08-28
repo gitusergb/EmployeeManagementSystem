@@ -30,7 +30,7 @@ function EmployeeTable({employees, onDelete, onEdit }) {
               />
             </td>
             <td>
-              <button onClick={() => onDelete(emp.id)}>Delete</button>
+              <button className='delete-btn' onClick={() => onDelete(emp.id)}>Delete</button>
             </td>
           </tr>
         ))}
